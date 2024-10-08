@@ -1,0 +1,306 @@
+    /* Universal Style */
+
+    /* color */
+
+    :root {
+        --text-color: rgb(255, 255, 255);
+        --text-color2: #0014f1;
+        --text-color2_2: rgb(150, 178, 50);
+        --text-color2_3: #ABEBF2;
+        --text-color3: rgb(0, 0, 0);
+        --text-color4: rgb(255, 0, 0);
+        --text-color5: rgba(4, 4, 4, 0.687);
+
+        --bg-color: #7413d5b4;
+        --bg-color2: rgba(113, 112, 112, 0.802);
+        --bg-color3: #D190E2;
+
+        --ratting: gold;
+
+        --box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        --box-shadow2: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+
+    /* Style */
+
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 40px 0;
+    }
+
+    /* Header Section */
+
+    .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .header .navbar {
+        background-color: var(--bg-color3) !important;
+    }
+
+    .header .container img {
+        width: 10%;
+    }
+
+    .header .container .navbar a {
+        color: var(--text-color);
+        transition: .4s;
+        font-weight: 900;
+    }
+
+    .header .container .navbar a:hover {
+        color: var(--text-color2);
+    }
+
+    /* Home Page */
+
+    /* Banner Section */
+
+    .banner-section .banner {
+        background-image: url(img/banner.jpg);
+        background-size: cover;
+        height: 800px;
+        background-repeat: no-repeat;
+    }
+
+
+    /* Course Section */
+    .course-section {
+        margin: 40px 0;
+    }
+
+    .course-section .container .card:hover {
+        box-shadow: var(--box-shadow);
+    }
+
+    .course-section .container .card .img {
+        overflow: hidden;
+    }
+
+    .course-section .container .card .img img {
+        transition: .4s;
+    }
+
+    .course-section .container .card:hover .img img {
+        transform: scale(1.1);
+    }
+
+    /* Feedback Section */
+
+    .customar-feedback {
+        margin: 40px 0;
+    }
+
+    .customar-feedback {
+        margin: 50px 0;
+    }
+
+
+    .customar-feedback .container .feedb .feed {
+        border: 1px solid var(--text-color2);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .customar-feedback .container .feedb .feed .img {
+        padding: 10px 10px 6px 10px;
+        overflow: hidden;
+    }
+
+    .customar-feedback .container .feedb .feed .img img {
+        width: 100%;
+        border-radius: 10px;
+        transition: .4s;
+    }
+
+    .customar-feedback .container .feedb .feed:hover .img img {
+        transform: scale(1.1);
+    }
+
+    .customar-feedback .container .feedb .feed .details {
+        padding: 15px 8px;
+    }
+
+    .customar-feedback .container .feedb .feed .details h3 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .customar-feedback .container .feedb .feed .details p {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .customar-feedback .container .feedb .feed .details .ratting i {
+        color: var(--ratting);
+    }
+
+
+    /* Gallery Section */
+
+    .gallery-section .container .img img {
+        width: 100%;
+    }
+
+    .gallery-section .container .img {
+        overflow: hidden;
+    }
+
+    .gallery-section .container .img img {
+        transition: .4s;
+    }
+
+    .gallery-section .container .img:hover img {
+        transform: scale(1.1);
+    }
+
+    /* Home Page Style End */
+
+    /* ******************************************************** */
+
+    /* About Page Style Start */
+
+    /* About Banner Section */
+    .about_banner .banner img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+
+    /* About Banner Section End */
+
+    /* About Staff Section */
+
+    .staff_section {
+        padding: 90px 0;
+    }
+
+    .staff_section .container .card {
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+    }
+
+    .staff_section .container .card:hover {
+        box-shadow: var(--box-shadow2);
+    }
+
+    .staff_section .container .card .img img {
+        width: 80%;
+        border-radius: 10px;
+        transition: .4s;
+    }
+
+    .staff_section .container .card:hover .img img {
+        transform: scale(1.1);
+    }
+
+    .staff_section .container .card .details h4 {
+        font-size: 40px;
+    }
+
+    /* Company About Section */
+
+    .company_about {
+        padding-top: 90px 0;
+    }
+
+    .company_about .container .left h5 {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .company_about .container .left p {
+        color: var(--text-color5);
+    }
+
+    .company_about .container .col-6 {
+        position: relative;
+    }
+
+    .company_about .container .left::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        top: 0;
+        right: 0;
+        background-color: var(--text-color2_2);
+    }
+
+    .company_about .container .left a {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: var(--text-color3);
+        background-color: var(--bg-color3);
+        border-radius: 6px;
+        font-weight: 700;
+    }
+
+    .company_about .container .left a:hover {
+        color: var(--text-color);
+        background-color: var(--bg-color);
+    }
+
+    .company_about .container .right .img {
+        overflow: hidden;
+    }
+
+    .company_about .container .right .img img {
+        width: 100%;
+        transition: .4s;
+    }
+
+    .company_about .container .right .img:hover img {
+        transform: scale(1.2);
+    }
+
+
+
+    /* About Page Style End*/
+
+    /* ******************************************************** */
+
+    /* footer section */
+
+    .footer_section {
+        margin: 90px 0 0 0;
+        background-color: var(--bg-color);
+    }
+
+    .footer_section .container h3 {
+        color: var(--text-color2);
+        padding-top: 100px;
+        padding-bottom: 25px;
+    }
+
+    .footer_section .container ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .footer_section .container ul li {
+        padding: 5px 0;
+    }
+
+    .footer_section .container ul li:last-child {
+        padding-bottom: 30px;
+    }
+
+    .footer_section .container ul li a {
+        text-decoration: none;
+        color: var(--text-color);
+        transition: .3s;
+    }
+
+    .footer_section .container ul li a:hover {
+        color: var(--text-color2);
+    }
